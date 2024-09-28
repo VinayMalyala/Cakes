@@ -439,3 +439,31 @@ header{
     filter: var(--shadow-img);
     justify-self: center;
 }
+
+/* banner  */
+.banner_container{
+    background-color: var(--second-color);
+    padding: 1rem 1.5rem;
+}
+
+.banner_list{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.banner_item{
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.banner_item span{
+    font-size: var(--small-font-size);
+    font-family: var(--second-font);
+}
+
+.banner_item i{
+    font-size: 1.5rem;
+}
