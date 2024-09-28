@@ -37,11 +37,11 @@ const shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader);
 
 // swiper favorites
-document.addEventListener('DOMContentLoaded', () => {
-    const swiperFavorites = new Swiper('.favorites_swiper', {
-        loop: true,
-        grabCursor: true,
-        slidesPerView: "auto",
-        centeredSlides: "auto",
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const swiperFavorites = new Swiper('.favorites_swiper', {
+//         loop: true,
+//         grabCursor: true,
+//         slidesPerView: "auto",
+//         centeredSlides: "auto",
+//     });
+// });

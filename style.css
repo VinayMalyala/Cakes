@@ -407,3 +407,35 @@ header{
 :is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites_cherry-4{
     scale: 1;
 }
+
+/* care  */
+.care{
+    background-color: var(--first-color-dark);
+}
+
+.care_container{
+    row-gap: 3rem;
+    padding-block: 1rem 2rem;
+}
+
+.care_list{
+    display: grid;
+    row-gap: 1.25rem;
+}
+
+.care_item{
+    display: flex;
+    column-gap: 0.75rem;
+    align-items: center;
+}
+
+.care_item i{
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+
+.care_img{
+    width: 320px;
+    filter: var(--shadow-img);
+    justify-self: center;
+}
