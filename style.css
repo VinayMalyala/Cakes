@@ -555,3 +555,80 @@ header{
     bottom: 3rem;
     rotate: 15deg;
 }
+
+/* contact */
+.contact_container{
+    position: relative;
+    background-color: var(--first-color-darken);
+    padding-top: 3.5rem;
+    border-radius: 3rem;
+    box-shadow: inset var(--shadow-card);
+    overflow: hidden;
+}
+
+.contact_content{
+    padding-top: 1rem;
+    row-gap: 3rem;
+}
+
+.contact_title{
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    font-weight: var(--font-regular);
+}
+
+.contact_data{
+    text-align: center;
+}
+
+.contact_social{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.75;
+}
+
+.contact_social a{
+    color: var(--second-color);
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.contact_social a:hover{
+    color: var(--white-color);
+}
+
+.contact_info{
+    font-style: normal;
+}
+
+.contact_img{
+    width: 200px;
+    justify-self: center;
+    filter: var(--shadow-img);
+}
+
+.contact_cake_outline,
+.contact_strawberry,
+.contact_cake_outline-2{
+    position: absolute;
+    width: 40px;
+    opacity: 0.7;
+}
+
+.contact_cake_outline{
+    top: 9rem;
+    right: 1.5rem;
+    rotate: 15deg;
+}
+
+.contact_strawberry{
+    left: 1rem;
+    top: 17rem;
+    rotate: 15deg;
+}
+
+.contact_cake_outline-2{
+    right: 2rem;
+    bottom: 11rem;
+    rotate: -15deg;
+}
