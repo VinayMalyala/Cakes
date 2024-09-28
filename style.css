@@ -330,3 +330,80 @@ header{
 .button_outline:hover{
     color: var(--white-color);
 }
+
+/* favorites */
+.favorites_container{
+    row-gap: 3rem;
+    grid-template-columns: 100%;
+    padding-bottom: 3rem;
+}
+
+.favorites_data{
+    position: relative;
+    text-align: center;
+}
+
+.favorites_cup_cake-1,
+.favorites_cup_cake-2{
+    width: 40px;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.favorites_cup_cake-1{
+    top: 2rem;
+    right: -1rem;
+    rotate: -15deg;
+}
+
+.favorites_cup_cake-2{
+    bottom: -2rem;
+    left: -0.75rem;
+    transform: scaleX(-1) rotate(45deg);
+}
+
+.favorites_article{
+    position: relative;
+    width: 200px;
+}
+
+.favorites_img{
+    width: 200px;
+    scale: 0.8;
+    transition: scale 0.4s, filter 0.4s;
+}
+
+.favorites_cherry-3,
+.favorites_cherry-4{
+    width: 50px;
+    position: absolute;
+    filter: var(--shadow-img);
+    scale: 0;
+    transition: scale 0.4s 0.1s;
+}
+
+.favorites_cherry-3{
+    top: 0;
+    right: -0.5rem;
+}
+
+.favorites_cherry-4{
+    bottom: -1rem;
+    left: -0.5rem;
+}
+
+/* swiper class */
+.swiper{
+    margin-inline: initial;
+    overflow: visible;
+}
+
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites_img{
+    scale: 1;
+    filter: var(--shadow-img);
+}
+
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites_cherry-3,
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites_cherry-4{
+    scale: 1;
+}

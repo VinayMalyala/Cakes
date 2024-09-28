@@ -25,7 +25,7 @@ const linkAction = () => {
     navMenu.classList.remove("show-menu");
 }
 
-navMenu.forEach(n => n.addEventListener('click', linkAction));
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 // shadow header 
@@ -35,3 +35,13 @@ const shadowHeader = () => {
 }
 
 window.addEventListener('scroll', shadowHeader);
+
+// swiper favorites
+document.addEventListener('DOMContentLoaded', () => {
+    const swiperFavorites = new Swiper('.favorites_swiper', {
+        loop: true,
+        grabCursor: true,
+        slidesPerView: "auto",
+        centeredSlides: "auto",
+    });
+});
