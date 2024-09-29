@@ -212,6 +212,11 @@ header{
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.15);
 }
 
+/* avtive link  */
+.active-link{
+    color: var(--second-color);
+}
+
 .home_container{
     padding-top: 1.5rem;
     justify-content: center;
