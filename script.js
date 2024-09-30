@@ -74,3 +74,21 @@ const scrollActive = () => {
 }
 
 window.addEventListener('scroll', scrollActive);
+
+// scroll reveal animation 
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 300,
+    reset: true,
+});
+
+sr.reveal('.home_data, .favorites_container, .footer_container');
+sr.reveal('.home_circle, .home_img', {delay: 600, scale: 0.5});
+sr.reveal('.home_cherry-1, .home_cherry-2', {delay: 1000, interval: 100});
+sr.reveal('.home_strawberry-1, .home_strawberry-2', {delay: 1400, interval: 100});
+
+sr.reveal('.care_img, .contact_img', {origin: "left"});
+sr.reveal('.care_list, .contact_data', {origin: "right"});
+sr.reveal('.banner_item, .products_card', {interval: 100});
