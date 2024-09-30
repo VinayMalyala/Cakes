@@ -791,7 +791,7 @@ header{
     }
 }
 
-/* medium devices */
+/*for medium devices */
 @media screen and (min-width: 540px){
     .home_container,
     .favorites_container,
@@ -839,5 +839,276 @@ header{
 
     .footer_link:nth-child(2){
         order: 1;
+    }
+}
+
+/* for large devices */
+@media screen and (min-width: 1150px){
+    .container{
+        margin-inline: auto;
+    }
+
+    section{
+        padding-block: 7rem 2rem;
+    }
+
+    .section_title{
+        margin-bottom: 2rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 2rem);
+    }
+
+    .nav_toggle,
+    .nav_close{
+        display: none;
+    }
+
+    .nav_link{
+        font-size: var(--normal-font-size);
+    }
+
+    .nav_menu{
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
+    }
+
+    .nav_list{
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .home_container{
+        grid-template-columns: 420px 585px;
+        align-items: center;
+        column-gap: 6rem;
+    }
+
+    .home_data{
+        text-align: initial;
+    }
+
+    .home_title{
+        margin-bottom: 1.5rem;
+    }
+
+    .home_description{
+        margin-bottom: 4rem;
+    }
+
+    .home_buttons{
+        justify-content: initial;
+        column-gap: 1.5rem;
+    }
+
+    .home_cake-outline{
+        width: 80px;
+        top: 6.5rem;
+    }
+
+    .home_circle{
+        width: 550px;
+        height: 550px;
+    }
+
+    .home_subcircle{
+        width: 430px;
+        height: 430px;
+    }
+
+    .home_images .home_img{
+        width: 500px;
+    }
+
+    .home_images img{
+        width: 95px;
+    }
+
+    .favorites_container{
+        grid-template-columns: 520px;
+        row-gap: 4rem;
+    }
+
+    .favorites_cup_cake-1,
+    .favorites_cup_cake-2{
+        width: 80px;
+    }
+
+    .favorites_cup_cake-1{
+        right: -18rem;
+    }
+
+    .favorites_cup_cake-2{
+        left: -18rem;
+    }
+
+    .favorites_swiper{
+        max-width: 1000px;
+    }
+
+    .favorites_article,
+    .favorites_img{
+        width: 320px;
+    }
+
+    .favorites_cherry-3,
+    .favorites_cherry-4{
+        width: 75px;
+    }
+
+    .care_container{
+        grid-template-columns: 500px 410px;
+        column-gap: 6rem;
+        align-items: center;
+        padding-block: 4rem;
+    }
+
+    .care_img{
+        width: 550px;
+        order: -1;
+    }
+
+    .care_item{
+        column-gap: 1rem;
+    }
+
+    .care_item i{
+        font-size: 2rem;
+    }
+
+    .banner_item{
+        column-gap: 1rem;
+    }
+
+    .banner_item i{
+        font-size: 4.5rem;
+    }
+
+    .banner_item span{
+        font-size: var(--h1-font-size);
+    }
+
+    .products_container{
+        padding-top: 7.5rem;
+    }
+
+    .products_content{
+        grid-template-columns: repeat(3, 250px);
+        gap: 10rem 4rem;
+    }
+
+    .products_card{
+        padding: 9rem 2rem 2rem;
+        border-radius: 1.5rem;
+    }
+
+    .products_img{
+        width: 220px;
+        top: -5rem;
+    }
+
+    .products_subtitle{
+        font-size: var(--normal-font-size);
+    }
+
+    .products_button{
+        right: 2rem;
+        bottom: 2rem;
+        padding: 6px;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .products_strawberry,
+    .products_cup_cake-1,
+    .products_cup_cake-2{
+        width: 80px;
+    }
+
+    .products_strawberry{
+        top: 2rem;
+    }
+
+    .products_cup_cake-2{
+        top: 30rem;
+        right: 3rem;
+    }
+
+    .products_cup_cake-1{
+        left: 4rem;
+        margin: initial;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .contact_container{
+        border-radius: 4rem;
+    }
+
+    .contact_content{
+        grid-template: 330px / 360px 320px;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 10rem;
+        padding-top: 2rem;
+    }
+
+    .contact_data{
+        text-align: initial;
+        grid-template: max-content / repeat(2, max-content);
+        gap: 3rem 2rem;
+    }
+
+    .contact_title{
+        margin-bottom: 0.75rem;
+    }
+
+    .contact_social{
+        justify-content: initial;
+    }
+
+    .contact_img{
+        width: 320px;
+        transform: translateY(-6rem);
+    }
+
+    .contact_cake_outline,
+    .contact_cake_outline-2,
+    .contact_strawberry{
+        width: 80px;
+    }
+
+    .contact_cake_outline{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 20rem;
+    }
+
+    .contact_strawberry{
+        top: 5rem;
+        left: 4rem;
+    }
+
+    .contact_cake_outline-2{
+        right: initial;
+        left: 12rem;
+        bottom: -1rem;
+    }
+
+    .footer{
+        padding-block: 5rem 3rem;
+    }
+
+    .footer_container{
+        row-gap: 3rem;
+    }
+
+    .scroll-up{
+        right: 3rem;
     }
 }
