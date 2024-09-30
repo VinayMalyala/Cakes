@@ -709,3 +709,84 @@ header{
 .show-scroll{
     bottom: 2rem;
 }
+
+/* break points */
+
+/* for small devices  */
+@media screen and (max-width: 340px) {
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .section_title{
+        font-size: var(--h2-font-size);
+    }
+
+    .home_title{
+        font-size: 3rem;
+    }
+
+    .home_buttons{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .home_circle{
+        width: 250px;
+        height: 250px;
+    }
+
+    .home_subcircle{
+        width: 200px;
+        height: 200px;
+    }
+
+    .home_images .home_img{
+        width: 200px;
+    }
+
+    .home_cake-outline{
+        top: 3.5rem;
+    }
+
+    .home_images img{
+        width: 50px;
+        filter: var(--shadow-img);
+        position: absolute;
+    }
+    
+    .home_cherry-1{
+        bottom: 0.5rem;
+        right: 1.5rem;
+    }
+    
+    .home_cherry-2{
+        top: 3.5rem;
+        left: 1rem;
+    }
+    
+    .home_strawberry-1{
+        top: 5.5rem;
+        right: 0.1rem;
+    }
+    
+    .home_strawberry-2{
+        left: 3.5rem;
+        bottom: -1rem;
+    }
+
+    .products_content{
+        grid-template-columns: 160px;
+        justify-content: center;
+    }
+
+    .footer_content{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 1.5rem;
+    }
+
+    .footer_copy{
+        grid-column: 1;
+    }
+}
